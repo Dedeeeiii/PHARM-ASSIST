@@ -1,0 +1,180 @@
+<html>
+<head>
+	<title>Recent Events</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+<style>
+	body{
+		margin: 0;
+		padding: 0;
+		background-color: #E8E4D6;
+		background-size: cover;
+		font-family: 'Poppins', sans-serif;
+		padding-left: 8%;
+		padding-right: 8%;
+		box-sizing: border-box;}
+
+	nav{
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100px;
+		padding:10px 90px;
+		box-sizing:border-box;
+		background-image: linear-gradient(#6DC4FF, #51B7FF);
+		opacity: 1;
+		border-bottom:1px solid #fff;
+	   }
+		   
+	nav .logo{
+			width: 80px;}
+	
+	nav ul{
+		   list-style:none;
+		   float:right;
+		   margin:0;
+		   padding:0;
+		   display:flex;
+		  }
+		  
+	nav ul li a{
+			    line-height:80px;
+				color:#fff;
+				padding:12px 30px;
+				text-decoration:none;
+				font-size:18px;
+				font-weight:bold;
+			   }
+				
+	nav ul li a:hover{
+					  background:rgba(31, 31, 255, 0.4);
+					  opacity:3.0;
+					  border-radius:50px;
+					 }
+	
+	.row{
+		display: flex;
+		height: 88%;
+		align-items: center;}
+		
+	.col{
+		flex-basis: 50%;}
+		
+	h1{
+		color: black;
+		font-size: 80px;}
+	
+	h5{
+		color: white;
+		font-size: 17px;
+		text-align: center; 
+		justify-content: center;
+		text-shadow: 2px 2px 4px #000000;}
+	
+	p{
+		color:black;
+		font-size: 15px;
+		line-height: 15px;}
+
+	#text{color: white; text-align: center; justify-content: center;}
+	
+	.explore{
+	   font-family: 'Roboto', sans-serif;
+	   width: 180px;
+	   color:white;
+	   font-size:1.25rem;
+	   padding:20px 50px;
+	   background:black;
+	   position:absolute;
+	   left:-50px;
+	   top:20px;
+	   text-decoration:none;
+	   padding:10px 30px;
+	   position:relative;
+	   margin:32px;
+	   border-radius:30px;
+	   transition: transform 0.3s ease;}
+
+	.explore::after, .explore:before{
+	content:"";
+	position:absolute;
+	opacity: 0.3;
+	background:black;
+	border-radius:inherit;
+	width:100%;
+	height:100%;
+	left:0;
+	bottom:0;
+	z-index:-1;
+	transition:transform 0.3s ease;}
+	.explore:hover{transform:translate(-12px, -12px);}
+	.explore:hover::after{transform:translate(6px,6px);}
+	.explore:hover::before{transform:translate(12px,12px);}
+	
+	.card{
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;}
+	
+	.card1{background-image:url(imgxvid/warmest.png);}
+	.card2{background-image: url(imgxvid/drought.png);}
+	.card3{background-image:url(imgxvid/wildfire.png);}
+	.card4{background-image:url(imgxvid/gases.png);}
+	
+	.card p{text-shadow: 2px 2px 4px #000000; font size:8px; }
+	.card:hover{transform: translateY(-10px)}
+	
+
+</style>
+</head>
+<body>
+	<div class = "row">
+		<div class = "col">
+			<h1>Latest Events</h1>
+			<p>Here lies the latest news and happenings regarding Climate Change.
+			Other articles and links that contains numerous of information about
+			Climate Change and Global Warming can be found here.</p>
+		<div>
+		<div><a href="https://edition.cnn.com/specials/world/cnn-climate" class="explore" id="proceed">PROCEED</a></div>
+		</div>
+		</div>
+		<div class = "col">
+			<div class = "card card1">
+				<h5>Terrifying Record of All Time</h5>
+				<p id="text">NASA Says 2022 is the Fifth Warmest Year on Record</p>
+			</div>
+		
+			<div class = "card card2">
+				<h5>A Signficant Climate Crisis</h5>
+				<p id="text">The shocking numbers behind the Lake Mead drought crisis</p>
+			</div>
+		
+			<div class = "card card3">
+				<h5>Devastating Wildfire Season Continues</h5>
+				<p id="text">High-elevation forests in the Rockies are burning more now than in the past 2,000 years</p>
+			</div>
+		
+			<div class = "card card4">
+				<h5>Scientist protest for Climate Action</h5>
+				<p id="text">"I feel that there has been no greater betrayal of humanity than by fossil fuel executives,"</p>
+			</div>
+		</div>
+	</div>
+	<nav>
+		<img src = "imgxvid/earth.png" class="logo">
+		<ul>
+			<li><a href = "Homepage.HTML">HOME</a></li>
+			<li><a href = "Events.HTML">RECENT EVENTS</a></li>
+			<li><a href = "AboutMe.HTML">ABOUT ME</a></li>
+		</ul>
+	</nav>
+</body>

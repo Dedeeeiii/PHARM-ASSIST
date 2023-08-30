@@ -1,0 +1,115 @@
+<style>
+	body{height: 100vh ;box-sizing:border-box;margin:0; padding:0; font-family:'Poppins', sans-serif;}
+	
+	h1{
+		font-size: 2.1rem;
+		line-height:1.4;
+		letter-spacing: 0.3rem;
+		text-align: center;
+		color: black;
+		margin-top: 120px;}
+	
+	.slider{
+		position:relative;
+		width: 60%;
+		overflow: hidden;
+		box-shadow: 1px 2px 10px 10px #7F7F7F;
+		animation: slider;}
+		
+	.images{
+		display: flex;
+		width: 1280px;}
+		
+	.images img{
+		height: 640px;
+		width: 1280px	;
+		transition: all 0.15s ease;}
+		
+	.images input{
+		display: none;}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+}
+.overlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: #ff946bbd;
+}
+.overlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-color: #008cba;
+}
+.Drought:hover .overlay,.container:hover .overlayFade {
+    opacity: 1;
+}
+
+	.dots{
+		display: flex;
+		justify-content: center;
+		margin: 5px;}
+	
+	.dots label{
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		border: solid #323538 3px;
+		cursor: pointer;
+		transition: all 0.15s ease;
+		margin:5px;}  
+		
+	.dots label:hover{background: #9098A0;}
+	#img1:checked ~ .m1 {margin-left: 0;}
+	#img2:checked ~ .m2 {margin-left: -100%;}
+	#img3:checked ~ .m3 {margin-left: -200%;}
+	#img4:checked ~ .m4 {margin-left: -300%;}
+	
+	nav{
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100px;
+		padding:10px 90px;
+		box-sizing:border-box;
+		background-image: linear-gradient(#6DC4FF, #51B7FF);
+		opacity: 1;
+		border-bottom:1px solid #fff;
+	   }
+		   
+	nav .logo{
+			width: 80px;}
+	
+	nav ul{
+		   list-style:none;
+		   float:right;
+		   margin:0;
+		   padding:0;
+		   display:flex;
+		  }
+		  
+	nav ul li a{
+			    line-height:80px;
+				color:#fff;
+				padding:12px 30px;
+				text-decoration:none;
+				font-size:18px;
+				font-weight:bold;
+			   }
+			   
+	nav ul li a:hover{
+					  background:rgba(31, 31, 255, 0.4);
+					  opacity:3.0;
+					  border-radius:50px;
+					 }
+</style>
