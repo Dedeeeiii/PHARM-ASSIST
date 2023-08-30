@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category</title>
+    <title>PHARM-ASSIST</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style (2).css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="feedback.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
+    <header>
+		<a href = "#" class = "logo">PHARM-ASSIST</a>
+		<ul>
+			<li><a href = "Homepage.HTML">HOME</a></li>
+            <li><a href = "Products.HTML">OUR PRODUCTS</a></li>
+            <li><a href = "Services.HTML">SERVICES</a></li>
+            <li><a href = "News.HTML">HEALTH NEWS</a></li>
+			<li><a href = "Contact.HTML">CONTACT US</a></li>
+			<li><a href = "About.HTML">ABOUT US</a></li>
+            <li><a href = "Faqs.HTML">FAQs</a></li>
+		</ul>
+    </header>
+    <section class="banner"></section>
+
+
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="images/sample1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="images/sample2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="images/sample3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="images/sample4.jpg" alt="">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
     <h1>MEDICAL CONDITIONS</h1>
+
     <section class="main-container">
 
         <div class="tab-nav-bar">
@@ -352,8 +398,47 @@
         </div>
         
     </section>
+    <hr class="med">
 
+    <div class="feedback">
+    <div class="fb-container swiper">
+        <div class="fb-content">
+            <div class="fbcard-wrapper swiper-wrapper">
+                <div class="fbcard swiper-slide">
+                    <div class="image-avatar">
+                        <span class="overlay"></span>
+                        
+                        <div class="fbcard-image">
+                            <img src="images/profile1.jpg" alt="" class="fbcard-img">        
+                        </div>
+                    </div>
+
+                    <div class="fbcard-content">
+                        <h2 class="name">Ms. Bowers </h2>
+                        <p class="description">Lorem ipsum is placeholder text commonly used in
+                            the graphic, print, and publishing industries for previewing layouts
+                            and visual mockups.</p>
+
+                            <button class="button">View More</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+    </div>
+    </div>
+
+    <script src="nav.js"></script>
+    <script src="app.js"></script>
     <script src="main.js"></script>
-
 </body>
+<script src="feedback.js"></script> 
+<script src="swiper-bundle.min.js"></script> 
+    
+
 </html>
